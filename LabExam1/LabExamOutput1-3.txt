@@ -1,0 +1,5 @@
+Letter    # of Occurrences    
+o         3                   
+d         2                   
+b         2                   
+e         1                   
