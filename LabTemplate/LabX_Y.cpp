@@ -6,19 +6,12 @@
  * ./LabX_Y.exe
 **/
 
-#include <chrono>
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    auto start = chrono::steady_clock::now();
-
-
-
-
-    auto totalTime = chrono::steady_clock::now() - start;
-    cout << "\nTime elapsed: " << chrono::duration <double, milli> (totalTime).count() << "ms\n";
+    
     return 0;
 }
 
