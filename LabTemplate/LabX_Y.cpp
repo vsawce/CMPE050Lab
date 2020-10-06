@@ -17,13 +17,13 @@ int main() {
 
 
 /**
- * Algorithm:
+****************** Algorithm ******************
 
 
- * Pseudocode:
+***************** Pseudocode ******************
 
 
- * Output of Lab Exercise:
+*********** Output of Lab Exercise ************
 
 
 **/
