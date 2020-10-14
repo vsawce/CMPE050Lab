@@ -53,10 +53,30 @@ void Student::CalculateAverage() {
     cout << "\nAverage score (Calc. Avg Member Func.): " << setprecision(2) << fixed << average; //Print member var average
 }
 
-void Student::SetQuiz1(double q1) { quiz1 = q1; } //double parameter is mutator
-void Student::SetQuiz2(double q2) { quiz2 = q2; } //double parameter is mutator
-void Student::SetMidtermExam(double mt) { midtermExam = mt; } //double parameter is mutator
-void Student::SetFinalExam(double fnl) { finalExam = fnl; } //double parameter is mutator 
+void Student::SetQuiz1(double q1) { //double parameter is mutator
+    if (q1 <= 10 && q1 >= 0)
+        quiz1 = q1;
+    else
+        cout << "\nQuiz 1 score out of range! (0 to 10 pts).";
+    } 
+void Student::SetQuiz2(double q2) { //double parameter is mutator
+    if (q2 <= 10 && q2 >= 0)
+        quiz2 = q2;
+    else
+        cout << "\nQuiz 2 score out of range! (0 to 10 pts).";
+} 
+void Student::SetMidtermExam(double mt) { //double parameter is mutator
+    if (mt <= 100 && mt >= 0)
+        midtermExam = mt;
+    else
+        cout << "\nMidterm score out of range! (0 to 100 pts).";
+    } 
+void Student::SetFinalExam(double fnl) { //double parameter is mutator 
+    if (fnl <= 100 && fnl >= 0)
+        finalExam = fnl;
+    else 
+        cout << "\nFinal score out of range! (0 to 100 pts).";
+    } 
 double Student::GetQuiz1() { return quiz1; } //accessor
 double Student::GetQuiz2() { return quiz2; } //accessor
 double Student::GetMidtermExam() { return midtermExam; } //accessor
